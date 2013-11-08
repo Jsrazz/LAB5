@@ -5,7 +5,7 @@ Implements design through use of interupts with both timer A and buttons.
 
 player is represented by an asterisk and needs to reach the bottom right corner of the lcd, using push buttons to move.
 
-Code
+Code:
 
     unsigned char initPlayer();
         returns the address of the first position in the game (Ox80)
@@ -22,9 +22,9 @@ Code
         used with an if statement that will clear the lcd and then print the winning statement.
         Also waits for a reset in order to restart the game.
     void init_buttons();
-    initializes pins one through four as inputs for the push buttons, also enables them to trigger the interrupt flag on port 1.
+    initializes pins one through four as inputs for the push buttons, also enables them to trigger the interrupt flag on     port 1.
 
-Instructions
+Instructions:
 
 button 1 moves left, 2 right, 3 down, 4 up.
 Does not allow loop arounds when trying to enter a location off of the display.
